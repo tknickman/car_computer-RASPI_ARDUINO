@@ -1,0 +1,12 @@
+<h2>LED Control</h2>
+  <form action="{{ url_for('contact') }}" method=post>
+ 	{% for subfield in form.radio %}
+    	<tr>
+        	<td>{{ subfield }}</td>
+        	<td>{{ subfield.label }}</td>
+    	</tr>
+	{% endfor %}	
+	</br>
+	{{ form.submit }}
+</form>
+
